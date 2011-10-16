@@ -4,12 +4,54 @@
 
 //Color Definitions
 
+body
+  font-family: 'Droid Serif', 'Georgia', serif
+
 #header_area
   #header
+    font-size: 22px
+    #logo
+      text-align: right
+      padding: 1em 0
+      a
+        color: #333
+        text-decoration: none
+        letter-spacing: 1px
+    #zen_space
+      padding: 1em 0
+      background: #D7D7D7
 
 #content_area
   #content
+    #sidebar
+      background: #BBB
+      color: #FFF
+      .menu
+        li a
+          color: #D1D1D1
+          padding: 0 0.8em
+          text-decoration: none
+          line-height: 3em
+          font-size: 13px
+          display: block
+          background: #ACACAC
+          &:hover
+            background: #919191
+            color: #F5F5F5
+    #content_box
+      .page
+        margin: 1em 0
+        h2
+          font-size: 16px
+
 
 #footer_area
   #footer
+    text-align: right
+    padding: 1em 0
+    font-size: 12px 
+    color: #928888 
 
+//Page Specific Styles
+#home
+  .page

@@ -11,9 +11,20 @@ $ninesixty-columns: 12
 
 #header_area
   #header
+    #logo
+      +grid(8)
+    #zen_space
+      +grid(4)
 
 #content_area
   #content
+    #sidebar
+      +grid(4)
+      +grid-push(8)
+    #content_box
+      +grid-pull(4)
+      +grid(8)
 
 #footer_area
   #footer
+    +grid(12)

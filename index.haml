@@ -5,8 +5,10 @@
     <link href="css/grid.css" media="screen, projection" rel="stylesheet" type="text/css">
     <link href="css/text.css" media="screen, projection" rel="stylesheet" type="text/css">
     <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    
 
-  %body
+  %body#home
     #header_area
       .page
         #header
@@ -15,21 +17,34 @@
               Site Name
           /#logo
           #zen_space
-          /#zen_space
+            &nbsp;
+          /#zen_space 
+
         /#header
     /#header_area
-
 
     #content_area
       .page
         #content
-          This is content
+          #sidebar
+            .menu
+              %ul
+                %li.current_page_item
+                  %a{:href=>""}  Home
+                %li.page_item
+                  %a{:href=>""}  About
+              /ul
+            /.menu
+          #content_box
+            #page_id-77.page
+              %p
+                Lorem ipsum amet sit dolor.
         /#content
     /#content_area
 
     #footer_area
       .page
         #footer
-          This is footer
+          %p &copy; 2011. All Rights Reserved
         /#footer
     /#footer_area
