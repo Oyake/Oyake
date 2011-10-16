@@ -6,6 +6,8 @@
 
 body
   font-family: 'Droid Serif', 'Georgia', serif
+  font-size: 14px 
+  color: #333 
 
 #header_area
   #header
@@ -13,6 +15,7 @@ body
     #logo
       text-align: right
       padding: 1em 0
+      font-family: 'Monelngo', 'Lucida Grande', 'Lucida Sans', sans-serif
       a
         color: #333
         text-decoration: none
@@ -24,9 +27,12 @@ body
 #content_area
   #content
     #sidebar
-      background: #BBB
+      float: right
+      background: #ACACAC
       color: #FFF
+      min-height: 250px
       .menu
+        font-family: 'Molengo', 'Lucida Grande', 'Lucida Sans', sans-serif
         li a
           color: #D1D1D1
           padding: 0 0.8em
@@ -34,15 +40,19 @@ body
           line-height: 3em
           font-size: 13px
           display: block
+          text-transform: uppercase
+          letter-spacing: 1px
           background: #ACACAC
           &:hover
             background: #919191
             color: #F5F5F5
     #content_box
-      .page
-        margin: 1em 0
+      float: left
+      .page_post
         h2
           font-size: 16px
+        p
+          line-height: 1.6em
 
 
 #footer_area
@@ -54,4 +64,5 @@ body
 
 //Page Specific Styles
 #home
-  .page
+  .page_post
+    text-align: right
