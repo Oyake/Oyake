@@ -1,0 +1,52 @@
+!!!5
+%html
+  %head
+    %title This is Title
+    <link href="css/grid.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="css/text.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+    /<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    
+
+  %body
+    #header_area
+      .page
+        #header
+          %h2#logo
+            %a{:href=>""}
+              Steve Jobs
+          /#logo
+          #zen_space
+            &nbsp;
+          /#zen_space 
+
+        /#header
+    /#header_area
+
+    #content_area
+      .page
+        #content
+          #sidebar
+            .menu
+              %ul
+                %li.current_page_item
+                  %a{:href=>""}  Home
+                %li.page_item
+                  %a{:href=>""}  About
+              /ul
+            /.menu
+          #content_box
+            #page_id-77.page_post
+              %h1 About
+              %img{:src=>"images/steve-jobs.jpg", :align=>"right", :class=>"frame"}
+              %p
+                Steven Paul "Steve" Jobs was an American inventor and entrepreneur. He was co-founder, chairman, and chief executive officer of Apple Inc. Jobs was co-founder and previously served as chief executive of Pixar Animation Studios; he became a member of the board of directors of the Walt Disney Company in 2006, following the acquisition of Pixar by Disney.
+        /#content
+    /#content_area
+
+    #footer_area
+      .page
+        #footer
+          %p &copy; 2011. All Rights Reserved
+        /#footer
+    /#footer_area
